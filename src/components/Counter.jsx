@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-
+import './style.less'
 /*
 这个ui组件有两个参数： counter和onIncreaseClick
 counter需要从state计算得到
@@ -14,9 +14,9 @@ class Counter extends Component {
   render() {
     const { counter, onIncreaseClick } = this.props  
     return (
-      <div>
+      <div className="counter">
         <span>{counter}</span>
-        <button onClick={onIncreaseClick}>加</button>
+        <button className="btn" onClick={onIncreaseClick}>加</button>
       </div>
     )
   }

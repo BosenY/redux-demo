@@ -109,6 +109,7 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
+          /\.less$/,
           /\.json$/,
           /\.svg$/
         ],
@@ -152,6 +153,10 @@ module.exports = {
         test: /\.json$/,
         loader: 'json'
       },
+                  {
+                test: /\.less$/,
+                loader: "style!css!less"
+            },
       // "file" loader for svg
       {
         test: /\.svg$/,

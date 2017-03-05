@@ -4,7 +4,7 @@ import createLogger from 'redux-logger'
 import { Provider } from 'react-redux'
 import addApp from './reducer/index'
 import { createStore,applyMiddleware } from 'redux'
-import App from './containers/index'
+import routers from './router'
 const logger = createLogger()
 const store = createStore(
   addApp,
@@ -15,7 +15,7 @@ const rootEl = document.getElementById('root')
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    {routers}
   </Provider>,
   rootEl
 )
