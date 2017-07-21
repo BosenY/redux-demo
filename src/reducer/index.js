@@ -1,7 +1,5 @@
-import { combineReducers } from 'redux'
-import counter from './counter.js'
+import {combineReducers} from 'redux'
+import count from './count'
+import todolist from './todolist'
 
-const addApp =  combineReducers({
-  counter
-})
-export default addApp
+export default combineReducers({count, todolist})

@@ -8,16 +8,17 @@ counter需要从state计算得到
 
 class Counter extends Component {
   static propTypes = {
-  counter: PropTypes.number.isRequired,
+  count: PropTypes.number.isRequired,
   onIncreaseClick: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
   incrementAsync: React.PropTypes.func.isRequired
   }
+
   render() {
-    const { counter, onIncreaseClick,decrement,incrementAsync } = this.props  
+    const { count, onIncreaseClick,decrement,incrementAsync } = this.props
     return (
       <div className="counter">
-        <span>{counter}</span>
+        <span>{count}</span>
         <button className="btn" onClick={onIncreaseClick}>加</button>
         <button className="btn" onClick={decrement}>减</button>
         <button className="btn" onClick={incrementAsync}>Increment Async</button>

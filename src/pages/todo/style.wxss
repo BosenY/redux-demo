@@ -1,0 +1,6 @@
+.todoContainer .delete {
+  text-decoration: line-through;
+}
+.todoContainer .todoinput .new-todo {
+  width: 200px;
+}
