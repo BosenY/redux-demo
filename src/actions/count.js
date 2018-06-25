@@ -3,7 +3,7 @@ export const onIncreaseClick = () => {
    type: 'increase'
   }
 }
-export const  decrement = () => {
+export const decrement = () => {
   return  {
    type: 'decrement'
   }
